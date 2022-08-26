@@ -1,7 +1,6 @@
 .mybody{
   background-color: #FF3CAC;
 background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 29%, #000000 58%);
- 
 }
 
 .myh1 {
@@ -35,5 +34,5 @@ background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 29%, #000000 58%);
 .test{
   background-color: pink;
   height: 200px;
-}
+} /* Plantilla temporal de referencias para hacer pruebas. */
 
