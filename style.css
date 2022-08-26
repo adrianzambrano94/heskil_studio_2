@@ -1,0 +1,39 @@
+.mybody{
+  background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 29%, #000000 58%);
+ 
+}
+
+.myh1 {
+  font-size: 5.5rem;
+}
+
+.myh2 {
+  font-size: 4rem;
+}
+
+.myimage1{
+  height: 50%;
+  width: 50%;
+  margin-left: 32rem;
+  margin-top: -50rem;
+} 
+.myimage2{
+  height: 750px;
+  width: 50%;
+  margin-left: 34rem;
+  margin-top: -10rem;
+}
+.myText2{
+  height: 600px;
+  font-size: 2rem;
+  padding-left: 34%;
+  padding-top: 25rem;
+  margin-top: -40rem;
+}
+
+.test{
+  background-color: pink;
+  height: 200px;
+}
+
