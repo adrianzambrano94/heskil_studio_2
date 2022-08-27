@@ -46,8 +46,8 @@ a:active {
 /* 11 */
 .btn-11 {
   border: none;
-  background: rgb(251,33,117);
-    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+  background: rgba(251, 33, 33, 0.5);
+    background: linear-gradient(0deg, rgba(251, 33, 33, 0.5) 0%, rgba(234, 76, 76, 0.5) 100%);
     color: #fff;
     overflow: hidden;
 }
@@ -67,9 +67,9 @@ a:active {
     animation: shiny-btn1 3s ease-in-out infinite;
 }
 .btn-11:hover{
-  background: rgb(86, 236, 26);
-  color: rgb(43, 43, 43);
-  opacity: .7;
+  background: rgba(85, 236, 26, 0.5);
+  /* color: rgb(43, 43, 43); */
+  /* opacity: .5; */
 }
 .btn-11:active{
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
