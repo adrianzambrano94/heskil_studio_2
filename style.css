@@ -31,8 +31,47 @@ background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 29%, #000000 58%);
   margin-top: -40rem;
 }
 
+.myMarginFooterLeft{
+  margin-top: -3rem;
+  background-color: #B721FF;
+background-image: linear-gradient(21deg, #B721FF 0%, #2187fd 33%, #2e39bf 71%);
+border-radius: 0px 25px 0px 0px
+}
+
+.myMarginFooterRight{
+  background-color: rgb(34, 34, 34);
+}
+
+.myPadding1 {
+  padding-top: 10rem;
+  padding-left: 8rem;
+}
+
+.myLink:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.myLink:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.myLink:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.myLink:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .test{
   background-color: pink;
   height: 200px;
 } /* Plantilla temporal de referencias para hacer pruebas. */
-
