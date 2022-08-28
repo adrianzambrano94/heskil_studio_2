@@ -181,7 +181,7 @@ header p {
 .close {
   width: 21px;
   height: 21px;
-  background: url('../media/images/x.svg') rgba(255, 0, 0, 0.75) center no-repeat; /*Close icon*/
+  background: url('../media/images/x.svg') center no-repeat; /*Close icon*/
   /* background-color: aqua; */
   position: absolute;
   right: 10px;
