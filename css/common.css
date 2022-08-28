@@ -1,0 +1,9 @@
+.myNavBar{
+  border-bottom: solid 2px gray;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+.mybody{
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 29%, #000000 58%);
+}
