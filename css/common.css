@@ -5,13 +5,13 @@
 
 /**** Botón general ****/
 .myButton {
-  background-color: #ff008a; /* Green */
+  background-color: #ff0080; /* Green */
   border-radius: 25px;
   color: white;
   padding: 12px 38px;
   text-align: center;
   text-decoration: none;
-  border: 2px solid #ff008a;
+  border: 2px solid #ff0080;
   transition-duration: 0.4s;
 }
 .myButton:hover {
@@ -21,7 +21,7 @@
   padding: 12px 38px;
   text-align: center;
   text-decoration: none;
-  border: 2px solid #ff008a;
+  border: 2px solid #ff0080;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -29,22 +29,23 @@
 /**** Navbar ****/
 .myNavbarLink:link {
   color: white;
+  font-weight: bold;
   background-color: transparent;
   text-decoration: none;
 }
 .myNavbarLink:visited {
-  color: pink;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 .myNavbarLink:hover {
-  color: #ff008a;
+  color: #ff0080;
   background-color: transparent;
   text-decoration: none;
   transition: 0.4s;
 }
 .myNavbarLink:active {
-  color: #ff008a;
+  color: #ff0080;
   background-color: transparent;
   text-decoration: none;
 }
@@ -87,3 +88,7 @@
   background-color: transparent;
   text-decoration: underline;
 }
+
+
+
+
