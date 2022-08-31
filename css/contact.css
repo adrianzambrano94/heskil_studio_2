@@ -8,21 +8,3 @@ input[type=text], input[type=tel], input[type=email], textarea {
   border: solid 2px black;
   color: white;
 }
-input[type=submit] {
-  width: 200px;
-  padding: 19px 5px;
-  margin-bottom: 25px;
-  border-radius: 10px;
-  background-color: #ff0080;
-  border: solid 2px #ff0080;
-  color: white;
-}
-input[type=submit]:hover {
-  width: 200px;
-  padding: 19px 5px;
-  margin-bottom: 25px;
-  border-radius: 10px;
-  background-color: #ff86c3;
-  border: solid 2px #ff0080;
-  color: rgb(0, 0, 0);
-}
