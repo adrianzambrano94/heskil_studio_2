@@ -1,0 +1,25 @@
+.myButtonLink:link {
+  color: #ff0080;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.myButtonLink:visited {
+  color: #ff0080;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.myButtonLink:hover {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.myButtonLink:active {
+  color: rgb(238, 255, 0);
+  background-color: transparent;
+  text-decoration: none;
+}

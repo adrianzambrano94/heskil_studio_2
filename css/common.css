@@ -3,6 +3,7 @@
 /**** Fondo general ****/
 .myBackground{
   background-color: black;
+  font-family: sans-serif,'Segoe UI', Tahoma, Geneva, Verdana;
 }
 
 /**** Botón general ****/
@@ -26,26 +27,29 @@
   border: 2px solid #ff0080;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
+.myButtonLink
 
 /**** Navbar ****/
 .myNavbarLink:link {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: transparent;
   text-decoration: none;
 }
+
 .myNavbarLink:visited {
   color: white;
   background-color: transparent;
   text-decoration: none;
 }
+
 .myNavbarLink:hover {
   color: #ff0080;
   background-color: transparent;
   text-decoration: none;
   transition: 0.4s;
 }
+
 .myNavbarLink:active {
   color: #ff0080;
   background-color: transparent;
