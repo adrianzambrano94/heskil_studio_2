@@ -50,7 +50,6 @@
   text-decoration: underline;
 }
 
-
 /**** Del footer ****/
 .myFooterLeft-bg{
   margin-top: -3rem;
@@ -94,4 +93,25 @@
 .h3{
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/* AÑADIR NEON A TEXTO */
+.titulo{
+  color: #ffff;
+  text-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4, 
+  0 0 50px #03e9f4,
+  0 0 100px #03e9f4;
+  letter-spacing: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.titulo:hover{
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4, 
+  0 0 50px #000000,
+  0 0 100px #000000;
 }
