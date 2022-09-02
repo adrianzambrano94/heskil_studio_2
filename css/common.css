@@ -8,24 +8,72 @@
 
 /**** Botón general ****/
 .myButton {
-  background-color: #ff0080;
-  border-radius: 25px;
-  color: white;
-  padding: 12px 38px;
-  text-align: center;
+  font-size: 1.6rem;
+  display: inline-block;
+  cursor: pointer;
   text-decoration: none;
-  border: 2px solid #ff0080;
-  transition-duration: 0.4s;
+  color: hsl(317 100% 54%);
+  border: hsl(317 100% 54%) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 hsl(317 100% 54%), 0 0 0.5em 0 hsl(317 100% 54%);
+  position: relative;
+  background-color: transparent;
 }
-.myButton:hover {
-  background-color: #ffffff;
-  border-radius: 25px;
-  color: rgb(0, 0, 0);
-  padding: 12px 38px;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid #ff0080;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.myButton::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: hsl(317 100% 54%);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+.myButton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em hsl(317 100% 54%);
+  opacity: 0;
+  background-color: hsl(317 100% 54%);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+.myButton:hover,
+.myButton:focus {
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+  background-color: hsl(317 100% 54%);
+}
+.myButton:hover::before,
+.myButton:focus::before {
+  opacity: 1;
+}
+.myButton:hover::after,
+.myButton:focus::after {
+  opacity: 1;
+}
+/* Input field */
+input[type=submit]{
+  background-color: transparent;
+  color: hsl(317 100% 54%);
+  border: transparent;
+  margin: -0.25em -1em;
+  padding: 0.25em 1em;
+
+}
+input[type=submit]:hover{
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: transparent;
 }
 
 /**** Navbar ****/
@@ -94,6 +142,8 @@
   font-weight: bold;
 }
 
+
+
 /* AÑADIR NEON A TEXTO */
 .titulo{
   color: #ffff;
@@ -101,7 +151,7 @@
   0 0 25px #03e9f4, 
   0 0 50px #03e9f4,
   0 0 100px #03e9f4;
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
   cursor: pointer;
   text-transform: uppercase;
   transition: 0.5s;
