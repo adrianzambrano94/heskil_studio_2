@@ -61,14 +61,13 @@
   background-color: rgb(34, 34, 34);
 }
 
-
 .myLink:link {
   color: white;
   background-color: transparent;
   text-decoration: none;
 }
 .myLink:visited {
-  color: pink;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   text-decoration: none;
 }
@@ -135,7 +134,7 @@
   top: 0;
   right: 0;
   width: 10px;
-  background: linear-gradient(to top,#008aff,#00ffe7);
+  background: linear-gradient(to top,rgba(0, 136, 255, .1),rgba(0, 255, 231, .1));
   animation: animate 5s linear infinite;
 }
 @keyframes animate{
@@ -153,7 +152,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top,#008aff,#00ffe7);
+  background: linear-gradient(to top, rgba(0, 138, 255, 1),#00ffe7);
   /* animation: animate 5s linear infinite; */
   filter: blur(10px);
 }
