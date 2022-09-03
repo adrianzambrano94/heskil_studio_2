@@ -9,3 +9,14 @@
   bottom: 0;
   /* z-index: -1; */
 }
+
+.pruebaconboton{
+  border: transparent;
+  background-color: transparent;
+  color: white;
+}
+.pruebaconboton:hover{
+  border: transparent;
+  background-color: transparent;
+  color: rgb(255, 238, 0);
+}
