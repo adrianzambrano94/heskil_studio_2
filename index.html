@@ -16,7 +16,7 @@
   <meta property="og:Materializando Sueños" content="" /> <!-- title shown in the actual shared post -->
   <meta property="og:Cuéntanos tu idea y la hacemos realidad." content="" />
   <!-- description shown in the actual shared post -->
-  <meta property="og:image" images="/logo.webp" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:image" images="/multimedia/images/logo.webp" /> <!-- image link, make sure it's jpg -->
   <meta property=" og:url" content="" /> <!-- where do you want your post to link to -->
   <meta property="og:type" content="article" />
 
@@ -24,13 +24,13 @@
   <title>HESKIL STUDIO ®</title>
 
   <!-- Favicon  -->
-  <link rel="icon" href="images/logo.webp">
+  <link rel="icon" href="/multimedia/images/logo.webp">
 
   <!-- css -->
   <!-- Icons bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- Bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/common.css">
@@ -38,23 +38,25 @@
 </head>
 
 <body class="myBackground">
-  <div id="progressbar"></div>
-  <div id="scrollPath"></div>
+  <div id="progressbar"></div>  <!-- Mara medir el progreso de desplazamiento -->
+  <div id="scrollPath"></div>  <!-- Para mostrar animacion de desplazamiento con el valor medido en la linea anterior -->
   <div>
-    <button class="pruebaconboton" onclick="myFunctionScroll()"><b>Desplazar<br><span style="font-size:2rem">&#8675;</span></b></button>
-    <!-- The video -->
-    <video autoplay muted loop id="myVideo">
+    <button class="botonVideo" onclick="myFunctionScrollVideo()"><b>Desplazar<br>
+      <span style="font-size: 2rem">
+        &#8675; <!-- Flecha en el video -->
+      </span></b></button>
+    <video autoplay muted loop id="myVideo"> <!-- El video -->
       <source src="multimedia/videos/file.webm">
     </video>
   </div>
   
-  <!-- https://video.wixstatic.com/video/37e108_5b6876cc07ec458e9155e7ddfa5520da/1080p/mp4/file.mp4 -->
+  
   <!-- Header - Navbar -->
   <!-- Para PCs, Tablets, Mobiles -->
   <header class="container">
     <nav id="myNavbarID" class="navbar navbar-dark navbar-expand-lg mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand titulo" href="index.html"> <img src="images/logo.webp" alt="logo heskil">heskil studio</a>
+        <a class="navbar-brand titulo" href="index.html"> <img src="multimedia/images/logo.webp" alt="logo heskil" style="width: 25%;">heskil studio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -63,14 +65,14 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item px-3">
               <a class="nav-link myNavbarLink" aria-current="page" href="index.html" style="color: #ff0080">INICIO</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link myNavbarLink" href="#about">ABOUT US</a>
             </li>  
             <li class="nav-item px-3">
-              <a class="nav-link myNavbarLink" href="#solutions">SOLUCIONES</a>
+              <a class="nav-link myNavbarLink" href="#solutions" onclick="myFunctionScrollSolutions()">SOLUCIONES</a>
             </li>
-<!-- De aquí -->
+            <li class="nav-item px-3">
+              <a class="nav-link myNavbarLink" href="#about" onclick="myFunctionScrollAbout()">ABOUT US</a>
+            </li>
+            <!-- Comienza dropdown -->
             <li class="nav-item dropdown px-3">
               <a class="nav-link dropdown-toggle myNavbarLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 PORTAFOLIO
@@ -81,13 +83,12 @@
                 <li><a class="dropdown-item myNavbarLink" href="portfolio/branding.html">Branding</a></li>
                 <li><a class="dropdown-item myNavbarLink" href="portfolio/arte.html">Arte</a></li>
               </ul>
-            </li>
-<!-- Hasta aqui -->          
+            </li>          
             <li class="nav-item px-3">
               <a class="nav-link myNavbarLink" href="contact.html">CONTACTO</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link myNavbarLink" href="#" img src="images/usa_icon.png">EN/SP</a>
+              <a class="nav-link myNavbarLink" href="#"> LANG: <img src="multimedia/images/lang/usa_icon.png" alt="English language" style="height: 30px;"></a>
             </li>
           </ul>
         </div>
@@ -97,31 +98,28 @@
   <!-- Termina Header - Navbar -->
 
 
-  <!-- Intro -->
-
+  <!-------------------------------------------------------------------------- Comienza prensentacion de la empresa -->
   <!-- Para PCs -->
   <main class="d-none d-lg-block container mt-5 pt-5">
     <nav class="row text-light">
       <nav class="col-6">
-        <h1 class="titulo" style="font-size: 6rem;"><strong>Heskil<br>Studio</strong></h1>
+        <h1 class="titulo" style="font-size: 5.5rem;"><strong>Heskil<br>Studio</strong></h1>
         <p class="col-10 mt-5" style="margin-bottom: 60px;">Somos un estudio de animación especializado en arte digital.
           Nos apasiona explorar
           alternativas para materializar tus ideas y llevar tu marca a otro nivel.</p>
         <a class="my-5 myButton" href="contact.html">Contacto</a>
         <br>
-        <img src="images/esfera.png" alt="esfera con degradado morado y negro" style="margin-top: 380px;">
+        <img src="multimedia/images/index/esfera.png" alt="esfera con degradado morado y negro" style="margin-top: 100px;">
       </nav>
       <nav class="col-6">
-        <nav style="height: 300px;"></nav>
-        <img src="images/bg_degradado.jpg" alt="background degradado" style="width: 80%; height: 48%;">
-        <img src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/image-1.jpg" alt=""
-          style="width: 80%; height: auto; margin-left:-20px; margin-top: -600px;">
-        <p class="h3" style="margin-top: -200px; margin-left: -170px;">EN EL AMOR Y EL DISEÑO<br>¡TODO SE VALE!</p>
-        <nav style="height: 200px;"></nav>
+        <nav style="height: 10px;"></nav>
+        <img src="multimedia/images/index/bg_degradado.jpg" alt="background degradado" style="width: 80%; height: 60%;">
+        <img src="multimedia/images/index/image-1.jpg" alt="Estatuilla" style="width: 80%; height: auto; margin-left:-20px; margin-top: -500px;">
+        <p class="h3" style="margin-top: -130px; margin-left: -170px;">EN EL AMOR Y EL DISEÑO<br>¡TODO SE VALE!</p>
+        <nav style="height: 250px;"></nav>
       </nav>
     </nav>
   </main>
-
   <!-- Para Tablets -->
   <main class="d-none d-md-block d-lg-none container mt-5">
     <nav class="row text-light">
@@ -131,18 +129,16 @@
           alternativas para materializar tus ideas y llevar tu marca a otro nivel</p>
         <a class="my-5 myButton" href="contact.html">Contacto</a>
         <br>
-        <img src="images/esfera.png" alt="esfera con degradado morado y negro" style="margin-top: 100px; width: 40%;">
+        <img src="multimedia/images/index/esfera.png" alt="esfera con degradado morado y negro" style="margin-top: 100px; width: 40%;">
       </nav>
       <nav class="col-6">
         <nav style="height: 300px;"></nav>
-        <img src="images/bg_degradado.jpg" alt="background degradado" style="width: 100%; height: 50%;">
-        <img src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/image-1.jpg" alt=""
-          style="width: 100%; height: auto; margin-left:-1.5rem; margin-top: -30rem;">
+        <img src="multimedia/images/index/bg_degradado.jpg" alt="background degradado" style="width: 100%; height: 50%;">
+        <img src="multimedia/images/index/image-1.jpg" alt="Estatuilla" style="width: 100%; height: auto; margin-left:-1.5rem; margin-top: -30rem;">
         <p class="h3" style="margin-top: -150px; margin-left: -150px;">EN EL AMOR Y EL DISEÑO<br>¡TODO SE VALE!</p>
       </nav>
     </nav>
   </main>
-
   <!-- Para Mobiles -->
   <main class="d-block d-md-none container mt-5">
     <nav class="row text-light text-center">
@@ -154,24 +150,25 @@
         <nav style="height: 30px;"></nav>
       </nav>
       <nav class="col-12">
-        <img src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/image-1.jpg" alt=""
+        <img src="multimedia/images/index/image-1.jpg" alt="Estatuilla"
           style="width: 90%; height: auto; margin-top: 1rem;">
         <p class="h3" style="margin-top: -4rem;">EN EL AMOR Y EL DISEÑO<br>¡TODO SE VALE!</p>
       </nav>
     </nav>
   </main>
-  <!-- Termina Intro -->
+  <!-- Termina prensentacion de la empresa -->
 
-  <!-- Soluciones -->
+  <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ Soluciones -->
   <!-- Para PCs, Tablets -->
-  <section class="d-none d-md-block container text-light mt-5" id="solutions">
+  <nav id="solutions"></nav>
+  <section class="d-none d-md-block container text-light mt-5">
     <h2 class="h1 pb-3 titulo">Soluciones creativas</h2>
     <nav class="row pt-3">
       <nav class="col-6">
         <!-- Primer elemento -->
         <nav class="mb-5 pb-1">
           <nav class="text-center"><img
-              src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/cinematic-portrait-of-handsome-young-man-in-neon-l-Z264PTP-683x1024.jpg"
+              src="multimedia/images/index/cinematic-portrait-of-handsome-young-man-in-neon-l-Z264PTP-683x1024.jpg"
               alt="" style="width: 90%;"></nav>
           <nav class="mt-4 mx-auto col-11 px-2">
             <b class="h3">MODELADO 3D</b>
@@ -183,7 +180,7 @@
         <!-- Segundo elemento -->
         <nav class="mb-5 pb-1">
           <nav class="text-center"><img
-              src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/neon-light-N76PGWG-800x534.jpg"
+              src="multimedia/images/index/neon-light-N76PGWG-800x534.jpg"
               alt="" style="width: 90%;"></nav>
           <nav class="mt-4 mx-auto col-11 px-2">
             <b class="h3">REINVENTA TU MARCA</b>
@@ -196,7 +193,7 @@
       <nav class="col-6">
         <nav class="mb-5 pb-1">
           <nav class="text-center"><img
-              src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/creative-sport-and-neon-waves-on-dark-neon-lighted-HR58UZ8-800x800.jpg"
+              src="multimedia/images/index/creative-sport-and-neon-waves-on-dark-neon-lighted-HR58UZ8-800x800.jpg"
               alt="" style="width: 90%;"></nav>
           <nav class="mt-4 mx-auto col-11 px-2">
             <b class="h3">ARTE</b>
@@ -209,7 +206,7 @@
         <!-- Cuarto elemento -->
         <nav class="mb-5 pb-1">
           <nav class="text-center"><img
-              src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/ice-cream-cone-neon-sign-KWQDWT8-768x1024.jpg"
+              src="multimedia/images/index/ice-cream-cone-neon-sign-KWQDWT8-768x1024.jpg"
               alt="" style="width: 90%;"></nav>
           <nav class="mt-4 mx-auto col-11 px-2">
             <b class="h3">VFX - BRILLA EN LAS REDES</b>
@@ -235,7 +232,7 @@
         <!-- Primer elemento -->
         <nav class="mb-5 pb-1">
           <nav class="text-center"><img
-              src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/cinematic-portrait-of-handsome-young-man-in-neon-l-Z264PTP-683x1024.jpg"
+              src="multimedia/images/index/cinematic-portrait-of-handsome-young-man-in-neon-l-Z264PTP-683x1024.jpg"
               alt="" style="width: 90%;"></nav>
           <nav class="mt-4 mx-auto col-11 px-2">
             <b class="h3">MODELADO 3D</b>
@@ -247,7 +244,7 @@
         <!-- Segundo elemento -->
         <nav class="mb-5 pb-1">
           <nav class="text-center"><img
-              src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/neon-light-N76PGWG-800x534.jpg"
+              src="multimedia/images/index/neon-light-N76PGWG-800x534.jpg"
               alt="" style="width: 90%;"></nav>
           <nav class="mt-4 mx-auto col-11 px-2">
             <b class="h3">REINVENTA TU MARCA</b>
@@ -260,7 +257,7 @@
       <nav class="col-12">
         <nav class="mb-5 pb-1">
           <nav class="text-center"><img
-              src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/creative-sport-and-neon-waves-on-dark-neon-lighted-HR58UZ8-800x800.jpg"
+              src="multimedia/images/index/creative-sport-and-neon-waves-on-dark-neon-lighted-HR58UZ8-800x800.jpg"
               alt="" style="width: 90%;"></nav>
           <nav class="mt-4 mx-auto col-11 px-2">
             <b class="h3">ARTE</b>
@@ -273,7 +270,7 @@
         <!-- Cuarto elemento -->
         <nav class="mb-5 pb-1">
           <nav class="text-center"><img
-              src="https://kit.pixel-show.com/grasp/wp-content/uploads/sites/2/2021/02/ice-cream-cone-neon-sign-KWQDWT8-768x1024.jpg"
+              src="multimedia/images/index/ice-cream-cone-neon-sign-KWQDWT8-768x1024.jpg"
               alt="" style="width: 90%;"></nav>
           <nav class="mt-4 mx-auto col-11 px-2">
             <b class="h3">VFX - BRILLA EN LAS REDES</b>
