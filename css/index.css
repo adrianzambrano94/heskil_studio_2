@@ -27,9 +27,15 @@
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
 }
 .pruebaconboton:hover{
   border: transparent;
   background-color: transparent;
-  color: rgb(255, 238, 0);
+  color: rgb(255, 0, 242);
 }
