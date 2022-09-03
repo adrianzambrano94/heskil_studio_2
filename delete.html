@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myDIV {
+  min-height: 250px;
+  min-width: 250px;
+  /* overflow: auto; */
+  background: coral;
+}
+
+#content {
+  margin:1000px;
+  height: 400px;
+  width: 200px;
+  background-color: rgb(212, 88, 43);
+}
+</style>
+
+<body>
+<h1>The Element Object</h1>
+<h2>The scrollIntoView() Method</h2>
+
+
+<!-- Esto --> <button onclick="myFunctionScroll()">Scroll</button>
+<p>Click "Scroll" to scroll to the top of the element with id="content".</p>
+<div id="myDIV">
+  <div id="content">
+  <p>Some text inside an element.</p>
+  <p>Some text inside an element.</p>
+  <p>Some text inside an element.</p>
+  </div>
+</div>
+
+<script>
+function myFunctionScroll() {
+  const element = document.getElementById("content");
+  element.scrollIntoView();
+}
+</script>
+
+</body>
+</html>

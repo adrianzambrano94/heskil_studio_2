@@ -38,13 +38,21 @@
 </head>
 
 <body class="myBackground">
-  <!-- https://video.wixstatic.com/video/37e108_5b6876cc07ec458e9155e7ddfa5520da/1080p/mp4/file.mp4 -->
   <div id="progressbar"></div>
   <div id="scrollPath"></div>
+  <div>
+    <button class="pruebaconboton" onclick="myFunctionScroll()"><b>Desplazar<br><span style="font-size:2rem">&#8675;</span></b></button>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="multimedia/videos/file.webm">
+    </video>
+  </div>
+  
+  <!-- https://video.wixstatic.com/video/37e108_5b6876cc07ec458e9155e7ddfa5520da/1080p/mp4/file.mp4 -->
   <!-- Header - Navbar -->
   <!-- Para PCs, Tablets, Mobiles -->
   <header class="container">
-    <nav class="navbar navbar-dark navbar-expand-lg mt-4">
+    <nav id="myNavbarID" class="navbar navbar-dark navbar-expand-lg mt-4">
       <div class="container-fluid">
         <a class="navbar-brand titulo" href="index.html"> <img src="images/logo.webp" alt="logo heskil">heskil studio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -55,6 +63,12 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item px-3">
               <a class="nav-link myNavbarLink" aria-current="page" href="index.html" style="color: #ff0080">INICIO</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link myNavbarLink" href="#about">ABOUT US</a>
+            </li>  
+            <li class="nav-item px-3">
+              <a class="nav-link myNavbarLink" href="#solutions">SOLUCIONES</a>
             </li>
 <!-- De aquí -->
             <li class="nav-item dropdown px-3">
@@ -68,10 +82,7 @@
                 <li><a class="dropdown-item myNavbarLink" href="portfolio/arte.html">Arte</a></li>
               </ul>
             </li>
-<!-- Hasta aqui -->
-            <li class="nav-item px-3">
-              <a class="nav-link myNavbarLink" href="about.html">ABOUT US</a>
-            </li>            
+<!-- Hasta aqui -->          
             <li class="nav-item px-3">
               <a class="nav-link myNavbarLink" href="contact.html">CONTACTO</a>
             </li>
@@ -351,7 +362,7 @@
 
   <!-- Equipo de trabajo -->
   <!-- Para PCs, Tablets -->
-  <section class="d-none d-md-block my-5 py-5 container text-light">
+  <section class="d-none d-md-block my-5 py-5 container text-light" id="about">
     <h1 class="h1 mb-5 pb-5 titulo" style="font-size: 4rem;"><strong>Meet talent ... <br>Our Team</strong></h1>
     <nav class="row text-center">
       <nav class="col-4">
@@ -541,6 +552,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+    
     <script src="js/progressbar.js"></script>
   <!-- Termina script -->
 </body>
