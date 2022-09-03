@@ -9,6 +9,3 @@
   bottom: 0;
   /* z-index: -1; */
 }
-html {
-  scroll-behavior: smooth;
-}
