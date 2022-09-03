@@ -5,7 +5,7 @@ let progressHeight = (window.pageYOffset / totalHeight) * 100;
   progress.style.height = progressHeight + "%";
 }
 
-function myFunctionScroll() {
+function myFunctionScroll() { //Del video hacia el navbar
   const element = document.getElementById("myNavbarID");
   element.scrollIntoView();
 }
