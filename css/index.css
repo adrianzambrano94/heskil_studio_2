@@ -1,4 +1,3 @@
-
 #myVideo {
   height: 100vh;
   width: 100vw;
@@ -11,7 +10,7 @@
   /* z-index: -1; */
 }
 
-.pruebaconboton{
+.botonVideo{
   border: transparent;
   background-color: transparent;
   color: white;
@@ -34,7 +33,7 @@
       opacity: 0;
   }
 }
-.pruebaconboton:hover{
+.botonVideo:hover{
   border: transparent;
   background-color: transparent;
   color: rgb(255, 0, 242);

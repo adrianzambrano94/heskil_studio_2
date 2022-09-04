@@ -5,7 +5,15 @@ let progressHeight = (window.pageYOffset / totalHeight) * 100;
   progress.style.height = progressHeight + "%";
 }
 
-function myFunctionScroll() { //Del video hacia el navbar
+function myFunctionScrollVideo() { //Desplazamiento del video hacia el navbar
   const element = document.getElementById("myNavbarID");
+  element.scrollIntoView();
+}
+function myFunctionScrollSolutions() { //Desplazamiento del video hacia el navbar
+  const element = document.getElementById("solutions");
+  element.scrollIntoView();
+}
+function myFunctionScrollAbout() { //Desplazamiento del video hacia el navbar
+  const element = document.getElementById("about");
   element.scrollIntoView();
 }
