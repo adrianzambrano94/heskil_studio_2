@@ -16,37 +16,40 @@
   <meta property="og:Materializando Sueños" content="" /> <!-- title shown in the actual shared post -->
   <meta property="og:Cuéntanos tu idea y la hacemos realidad." content="" />
   <!-- description shown in the actual shared post -->
-  <meta property="og:image" images="../logo.webp" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:image" images="../multimedia/images/logo.webp" /> <!-- image link, make sure it's jpg -->
   <meta property=" og:url" content="" /> <!-- where do you want your post to link to -->
   <meta property="og:type" content="article" />
 
   <!-- Website Title -->
-  <title>HESKIL STUDIO ® - PORTAFOLIO</title>
+  <title>HESKIL STUDIO ® - VFX</title>
 
   <!-- Favicon  -->
-  <link rel="icon" href="../images/logo.webp">
+  <link rel="icon" href="../multimedia/images/logo.webp">
 
   <!-- css -->
   <!-- Icons bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- Bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/portfolio.css">
+
   <!-- Termina css -->
 </head>
 
 <body class="myBackground">
-  <div id="progressbar"></div>
-  <div id="scrollPath"></div>
+  <div id="progressbar"></div>  <!-- Mara medir el progreso de desplazamiento -->
+  <div id="scrollPath"></div>  <!-- Para mostrar animacion de desplazamiento con el valor medido en la linea anterior -->
+  
+  
   <!-- Header - Navbar -->
   <!-- Para PCs, Tablets, Mobiles -->
   <header class="container">
-    <nav class="navbar navbar-dark navbar-expand-lg mt-4">
+    <nav id="myNavbarID" class="navbar navbar-dark navbar-expand-lg mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand titulo" href="../index.html"> <img src="../images/logo.webp" alt="logo heskil">heskil studio</a>
+        <a class="navbar-brand titulo" href="../index.html"> <img src="../multimedia/images/logo.webp" alt="logo heskil" style="width: 25%;">heskil studio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -55,28 +58,30 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item px-3">
               <a class="nav-link myNavbarLink" href="../index.html">INICIO</a>
+            </li>  
+            <li class="nav-item px-3">
+              <a class="nav-link myNavbarLink" href="../index.html#solutions" onclick="myFunctionScrollSolutions()">SOLUCIONES</a>
             </li>
-<!-- De aquí -->
+            <li class="nav-item px-3">
+              <a class="nav-link myNavbarLink" href="../index.html#about" onclick="myFunctionScrollAbout()">ABOUT US</a>
+            </li>
+            <!-- Comienza dropdown -->
             <li class="nav-item dropdown px-3">
-              <a class="nav-link dropdown-toggle myNavbarLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ff0080">
+              <a class="nav-link dropdown-toggle myNavbarLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: #ff0080">
                 PORTAFOLIO
               </a>
-              <ul class="dropdown-menu myNavbarLink" style="background-color: rgb(0, 0, 0); border: solid 1px rgb(255, 255, 255);">
-                <li><a class="dropdown-item myNavbarLink" href="vfx.html" aria-current="page" style="color: #ff0080">VFX</a></li>
+              <ul class="dropdown-menu myNavbarLink" style="background-color: rgb(0, 0, 0); border: solid 2px rgb(255, 255, 255);">
+                <li><a class="dropdown-item myNavbarLink" href="vfx.html"  aria-current="page" style="color: #ff0080">VFX</a></li>
                 <li><a class="dropdown-item myNavbarLink" href="3d_design.html">3D design</a></li>
                 <li><a class="dropdown-item myNavbarLink" href="branding.html">Branding</a></li>
                 <li><a class="dropdown-item myNavbarLink" href="arte.html">Arte</a></li>
               </ul>
-            </li>
-<!-- Hasta aqui -->
-            <li class="nav-item px-3">
-              <a class="nav-link myNavbarLink" href="../about.html">ABOUT</a>
-            </li>            
+            </li>          
             <li class="nav-item px-3">
               <a class="nav-link myNavbarLink" href="../contact.html">CONTACTO</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link myNavbarLink" href="#" img src="images/usa_icon.png">EN/SP</a>
+              <a class="nav-link myNavbarLink" href="#"> LANG: <img src="../multimedia/images/lang/usa_icon.png" alt="English language" style="height: 30px;"></a>
             </li>
           </ul>
         </div>
@@ -368,7 +373,7 @@
   
 
 
-  <!-- Footer -->
+  <!----------------------------------------------------------------------------------------------------------------------------------------------------- Footer -->
   <!-- Para PCs -->
   <footer class="mt-5 d-none d-lg-block">
     <div class="row m-auto text-light" style="margin-top: 100px;">
@@ -376,9 +381,8 @@
         <div class="pt-5 mt-5">
           <nav class="col-8 mx-auto mt-5">
             <h5 class="h1">Let's Get Your<br> Project Started!</h5>
-            <p class="pt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vitae architecto harum
-              molestiae illo quibusdam!</p>
-            <a class="myButton" href="contact.html">Contacto</a>
+            <p class="pt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vitae architecto harum molestiae illo quibusdam!</p>
+            <a class="mt-3 myButton" href="../contact.html">Contacto</a>
           </nav>
         </div>
       </div>
@@ -387,9 +391,18 @@
           <div class="row">
             <nav class="ps-5 col-6">
               <p class="h3 mb-5" style="padding-top: 7rem;"><b>Quick Link</b></p>
-              <p><a class="myLink" href="index.html">Home</a></p>
-              <p><a class="myLink" href="index.html#solutions">About Us</a></p>
-              <p><a class="myLink" href="contact.html">Contact</a></p>
+              <p><a class="myLink" href="../index.html">Inicio</a></p>
+              <p><a class="myLink" href="../index.html#solutions" onclick="myFunctionScrollSolutions()">Soluciones</a></p>
+              <p><a class="myLink" href="../index.html#about" onclick="myFunctionScrollAbout()">About Us</a></p>
+              <p>Portafolio<br>
+                <ul>
+                <li><a class="myLink" href="vfx.html">VFX</a></li>
+                <li><a class="myLink" href="3d_design.html">3D Design</a></li>
+                <li><a class="myLink" href="branding.html">Branding</a></li>
+                <li><a class="myLink" href="arte.html">Arte</a></li>
+                </ul>
+              </p>
+              <p><a class="myLink" href="../contact.html">Contact</a></p>
             </nav>
             <nav class="col-6">
               <p class="h3 mb-5" style="padding-top: 7rem;"><b>Contact Info</b></p>
@@ -417,9 +430,9 @@
         <div class="pt-5 mt-5">
           <nav class="col-10 mx-auto mt-5 text-center">
             <h5 class="h1">Let's Get Your<br> Project Started!</h5>
-            <p class="pt-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vitae architecto harum
+            <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vitae architecto harum
               molestiae illo quibusdam!</p>
-            <a class="myButton" href="contact.html">Contacto</a>
+            <a class="my-5 myButton" href="../contact.html">Contacto</a>
           </nav>
         </div>
       </div>
@@ -428,9 +441,18 @@
           <div class="row">
             <nav class="ps-5 col-6">
               <p class="h3 mb-5" style="padding-top: 7rem;"><b>Quick Link</b></p>
-              <p><a class="myLink" href="index.html">Home</a></p>
-              <p><a class="myLink" href="index.html#solutions">About Us</a></p>
-              <p><a class="myLink" href="contact.html">Contact</a></p>
+              <p><a class="myLink" href="../index.html">Inicio</a></p>
+              <p><a class="myLink" href="../index.html#solutions" onclick="myFunctionScrollSolutions()">Soluciones</a></p>
+              <p><a class="myLink" href="../index.html#about" onclick="myFunctionScrollAbout()">About Us</a></p>
+              <p>Portafolio<br>
+                <ul>
+                <li><a class="myLink" href="vfx.html">VFX</a></li>
+                <li><a class="myLink" href="3d_design.html">3D Design</a></li>
+                <li><a class="myLink" href="branding.html">Branding</a></li>
+                <li><a class="myLink" href="arte.html">Arte</a></li>
+                </ul>
+              </p>
+              <p><a class="myLink" href="../contact.html">Contact</a></p>
             </nav>
             <nav class="col-6">
               <p class="h3 mb-5" style="padding-top: 7rem;"><b>Contact Info</b></p>
@@ -458,10 +480,11 @@
         <div class="pt-2 mt-2">
           <nav class="col-10 mx-auto mt-1 text-center">
             <h5 class="h1">Let's Get Your<br> Project Started!</h5>
-            <p class="pt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vitae architecto harum
+            <p class="pt-3 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vitae architecto
+              harum
               molestiae illo quibusdam!</p>
-            <a class="myButton" href="contact.html">Contacto</a>
-            <nav style="height: 45px;"></nav>
+            <a class="my-5 myButton" href="../contact.html">Contacto</a>
+            <nav style="height: 50px;"></nav>
           </nav>
         </div>
       </div>
@@ -470,9 +493,18 @@
           <div class="row">
             <nav class="ps-5 col-6">
               <p class="h3 mb-5" style="padding-top: 3rem;"><b>Quick Link</b></p>
-              <p><a class="myLink" href="index.html">Home</a></p>
-              <p><a class="myLink" href="index.html#solutions">About Us</a></p>
-              <p><a class="myLink" href="contact.html">Contact</a></p>
+              <p><a class="myLink" href="../index.html">Inicio</a></p>
+              <p><a class="myLink" href="../index.html#solutions" onclick="myFunctionScrollSolutions()">Soluciones</a></p>
+              <p><a class="myLink" href="../index.html#about" onclick="myFunctionScrollAbout()">About Us</a></p>
+              <p>Portafolio<br>
+                <ul>
+                <li><a class="myLink" href="vfx.html">VFX</a></li>
+                <li><a class="myLink" href="3d_design.html">3D Design</a></li>
+                <li><a class="myLink" href="branding.html">Branding</a></li>
+                <li><a class="myLink" href="arte.html">Arte</a></li>
+                </ul>
+              </p>
+              <p><a class="myLink" href="../contact.html">Contact</a></p>
             </nav>
             <nav class="col-6">
               <p class="h3 mb-5" style="padding-top: 3rem;"><b>Contact Info</b></p>
@@ -500,6 +532,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+
     <script src="../js/progressbar.js"></script>
   <!-- Termina script -->
 </body>
