@@ -3,16 +3,23 @@
   font-weight: bold;
   background-color: transparent;
   text-decoration: none;
+  position: fixed; 
+  bottom: 15px; 
+  right: 30px; 
+  width: 150px; 
+  border: 3px solid #ff0080;
 }
 
 .myButtonLink:visited {
   color: #ff0080;
+  border: 3px solid #ff0080;
   background-color: transparent;
   text-decoration: none;
 }
 
 .myButtonLink:hover {
   color: #ffffff;
+  border: 3px solid #ffffff;
   background-color: transparent;
   text-decoration: none;
   transition: 0.4s;
@@ -20,6 +27,7 @@
 
 .myButtonLink:active {
   color: rgb(238, 255, 0);
+  border: 3px solid rgb(238, 255, 0);
   background-color: transparent;
   text-decoration: none;
 }
