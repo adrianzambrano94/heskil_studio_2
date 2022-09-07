@@ -19,7 +19,7 @@
 }
 
 .myButtonLink:active {
-  color: rgb(238, 255, 0);
+  color: #ffffff;
   background-color: transparent;
   text-decoration: none;
 } */
@@ -81,7 +81,7 @@
 .myButtonLink:focus,
 .myButtonLinkBack:hover,
 .myButtonLinkBack:focus {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-shadow: none;
   background-color: hsl(317 100% 54%);
 }
@@ -97,3 +97,4 @@
 .myButtonLinkBack:focus::after {
   opacity: 1;
 }
+

@@ -1,9 +1,9 @@
 /** Archivo de configuraciones generales **/
 
 /**** Fondo general ****/
-.myBackground{
+.myBackground {
   background-color: black;
-  font-family: sans-serif,'Segoe UI', Tahoma, Geneva, Verdana;
+  font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana;
 }
 
 /**** Botón general ****/
@@ -21,6 +21,7 @@
   position: relative;
   background-color: transparent;
 }
+
 .myButton::before {
   pointer-events: none;
   content: "";
@@ -34,6 +35,7 @@
   filter: blur(1em);
   opacity: 0.7;
 }
+
 .myButton::after {
   content: "";
   position: absolute;
@@ -47,22 +49,26 @@
   z-index: -1;
   transition: opacity 100ms linear;
 }
+
 .myButton:hover,
 .myButton:focus {
   color: rgb(255, 255, 255);
   text-shadow: none;
   background-color: hsl(317 100% 54%);
 }
+
 .myButton:hover::before,
 .myButton:focus::before {
   opacity: 1;
 }
+
 .myButton:hover::after,
 .myButton:focus::after {
   opacity: 1;
 }
+
 /* Input field */
-input[type=submit]{
+input[type=submit] {
   background-color: transparent;
   color: hsl(317 100% 54%);
   border: transparent;
@@ -70,7 +76,8 @@ input[type=submit]{
   padding: 0.25em 1em;
 
 }
-input[type=submit]:hover{
+
+input[type=submit]:hover {
   background-color: transparent;
   color: rgb(255, 255, 255);
   border: transparent;
@@ -82,62 +89,70 @@ input[type=submit]:hover{
   background-color: transparent;
   text-decoration: none;
 }
+
 .myNavbarLink:visited {
   color: rgb(255, 255, 255);
   background-color: transparent;
   text-decoration: none;
 }
+
 .myNavbarLink:hover {
   color: #ff0080;
   background-color: transparent;
   text-decoration: none;
 }
+
 .myNavbarLink:active {
-  color: yellow;
+  color: #ffffff;
   background-color: transparent;
   text-decoration: underline;
 }
 
 /**** Del footer ****/
-.myFooterLeft-bg{
+.myFooterLeft-bg {
   margin-top: -3rem;
   background-color: #4e076f;
   background-image: linear-gradient(45deg, #4e076f 25%, #0539ea 100%);
   border-radius: 0px 25px 0px 0px
 }
-.myFooterRight-bg{
+
+.myFooterRight-bg {
   background-color: rgb(34, 34, 34);
 }
 
 .myLink:link {
-  color: white;
+  color: #ffffff;
   background-color: transparent;
   text-decoration: none;
 }
+
 .myLink:visited {
   color: rgb(255, 255, 255);
   background-color: transparent;
   text-decoration: none;
 }
+
 .myLink:hover {
   color: red;
   background-color: transparent;
   text-decoration: underline;
 }
+
 .myLinkMedia:hover {
   color: rgb(136, 136, 136);
   background-color: transparent;
   text-decoration: underline;
 }
+
 .myLink:active {
-  color: yellow;
+  color: #ffffff;
   background-color: transparent;
   text-decoration: underline;
 }
 
 
 /**** Titulos del portafolio ****/
-.h3{
+.h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -145,75 +160,83 @@ input[type=submit]:hover{
 
 
 /* AÑADIR NEON A TEXTO */
-.titulo{
+.titulo {
   color: #ffff;
   text-shadow: 0 0 5px #03e9f4,
-  0 0 25px #03e9f4, 
-  0 0 50px #03e9f4,
-  0 0 100px #03e9f4;
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
   /* letter-spacing: 5px; */
   cursor: pointer;
   text-transform: uppercase;
   transition: 0.5s;
 }
 
-.titulo:hover{
+.titulo:hover {
   color: #fff;
   text-shadow: 0 0 5px #03e9f4,
-  0 0 25px #03e9f4, 
-  0 0 50px #000000,
-  0 0 100px #000000;
+    0 0 25px #03e9f4,
+    0 0 50px #000000,
+    0 0 100px #000000;
 }
-
 
 
 /* Barra de progreso */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0;
 }
-#scrollPath{
+
+#scrollPath {
   position: fixed;
   top: 0;
   right: 0;
   width: 10px;
   height: 100%;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
-#progressbar{
+
+#progressbar {
   position: fixed;
   top: 0;
   right: 0;
   width: 10px;
-  background: linear-gradient(to top,rgba(0, 136, 255, .1),rgba(0, 255, 231, .1));
+  background: linear-gradient(to top, rgba(0, 136, 255, .1), rgba(0, 255, 231, .1));
   animation: animate 5s linear infinite;
 }
-@keyframes animate{
-  0%,100%{
+
+@keyframes animate {
+
+  0%,
+  100% {
     filter: hue-rotate(0deg);
   }
-  50%{
+
+  50% {
     filter: hue-rotate(360deg);
   }
 }
-#progressbar:before{
+
+#progressbar:before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 138, 255, 1),#00ffe7);
+  background: linear-gradient(to top, rgba(0, 138, 255, 1), #00ffe7);
   /* animation: animate 5s linear infinite; */
   filter: blur(10px);
 }
-#progressbar:after{
+
+#progressbar:after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top,#008aff,#00ffe7);
+  background: linear-gradient(to top, #008aff, #00ffe7);
   /* animation: animate 5s linear infinite; */
   filter: blur(30px);
 }
+
