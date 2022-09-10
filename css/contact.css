@@ -1,4 +1,7 @@
-input[type=text], input[type=tel], input[type=email], textarea {
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
   width: 100%;
   padding: 12px 5px;
   margin: 10px 0;
@@ -8,3 +11,4 @@ input[type=text], input[type=tel], input[type=email], textarea {
   border: solid 2px black;
   color: white;
 }
+
