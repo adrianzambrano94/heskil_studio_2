@@ -6,7 +6,7 @@ let progressHeight = (window.pageYOffset / totalHeight) * 100;
 }
 
 function myFunctionScrollVideo() { //Desplazamiento del video hacia el navbar
-  const element = document.getElementById("myNavbarID");
+  const element = document.getElementById("miBarraTop");
   element.scrollIntoView();
 }
 function myFunctionScrollSolutions() { //Desplazamiento del video hacia el navbar
@@ -17,3 +17,16 @@ function myFunctionScrollAbout() { //Desplazamiento del video hacia el navbar
   const element = document.getElementById("about");
   element.scrollIntoView();
 }
+
+
+
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 1000) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})

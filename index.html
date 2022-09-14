@@ -30,12 +30,13 @@
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Termina css -->
+  <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
 </head>
 
 <body class="myBackground">
   <div id="progressbar"></div>  <!-- Mara medir el progreso de desplazamiento -->
   <div id="scrollPath"></div>  <!-- Para mostrar animacion de desplazamiento con el valor medido en la linea anterior -->
-  <div>
+  <div> <!--Video-->
     <button class="botonVideo" onclick="myFunctionScrollVideo()"><b>COMENZAR<br>
       <span style="font-size: 2rem">
         &#8675; <!-- Flecha en el video -->
@@ -48,9 +49,10 @@
   
   <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Header - Navbar -->
   <!-- Para PCs, Tablets, Mobiles -->
-  <header class="container">
+  <nav id="miBarraTop"></nav>
+  <header class="sticky-top" style="border-bottom: 1px solid rgba(255, 255, 255, 0.288); background-color: rgb(0, 0, 0);">
     <nav id="myNavbarID" class="navbar navbar-dark navbar-expand-lg mt-4">
-      <div class="container-fluid">
+      <div class="container-fluid styc">
         <a class="navbar-brand titulo" href="index.html"> <img src="multimedia/images/Heskil_Pluma_Azul.png" alt="logo heskil" width="55" height="55" class="d-inline-block align-text-top" style="position: absolute; top: 5px;">
           <img src="multimedia/images/Heskil_Nombre_Azul.png" alt="logo heskil" width="" height="25" class="d-inline-block align-text-top" style="position: absolute; top: 19px; left: 65px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -112,7 +114,7 @@
         <img src="multimedia/images/index/bg_degradado.jpg" alt="background degradado" style="width: 55%; height: 49%; margin-left: 200px;">
         <img src="multimedia/images/index/image-1.jpg" alt="Estatuilla" style="width: 55%; height: auto; margin-left: 180px; margin-top: -400px;">
         <p class="h3" style="margin-top: -90px; margin-left: 10px;">EN EL AMOR Y EL DISEÑO<br>¡TODO SE VALE!</p>
-        <nav style="height: 250px;"></nav>
+        <!-- <nav style="height: 250px;"></nav> -->
       </nav>
     </nav>
   </main>
@@ -157,7 +159,7 @@
 
 
   <!-------------------------------------------------------------------------------------------------------------------------------------------------------- Equipo de trabajo -->
-  <!-- Para PCs, Tablets -->
+  <!-- Para PCs, Tablets, Mobiles -->
   <nav id="about"></nav>
   <section class="my-5 container text-light" style="min-height: 750px;">
     <h2 class="h1 titulo">About Us<br>Our Team</h2>
@@ -414,6 +416,100 @@
   <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ Soluciones -->
   <!-- Para PCs & Tablets -->
   <nav id="solutions"></nav>
+
+  <!-- <span class="ir-arriba icon-arrow-up2">vbvb</span> -->
+
+  <!---portfolio--->
+  <section class="portfolio-class" id="portfolio">
+    <div class="titulo mt-5">
+      <h2>Creative solutions</h2>
+      <h4>Creating dreams</h4>
+    </div>
+
+    <div class="portfolio-content">
+      <div class="rowa">
+        <img src="multimedia/images/port_one.png">
+        <div class="main-rowa">
+          <div class="rowa-text">
+            <h6>Digital art</h6>
+          </div>
+          <div class="rowa-icon">
+            <i class='bx bx-heart'></i>
+          </div>
+        </div>
+        <button class="myButtonSolution">View more >></button>
+      </div>
+
+      <div class="rowa">
+        <img src="multimedia/images/port_two.png">
+        <div class="main-rowa">
+          <div class="rowa-text">
+            <h6>3D design</h6>
+          </div>
+          <div class="rowa-icon">
+            <i class='bx bx-heart'></i>
+          </div>
+        </div>
+        <button class="myButtonSolution">View more >></button>
+      </div>
+
+      <div class="rowa">
+        <img src="multimedia/images/port_tree.png">
+        <div class="main-rowa">
+          <div class="rowa-text">
+            <h6>Branding</h6>
+          </div>
+          <div class="rowa-icon">
+            <i class='bx bx-heart'></i>
+          </div>
+        </div>
+        <button class="myButtonSolution">View more >></button>
+      </div>
+
+      <div class="rowa">
+        <img src="multimedia/images/port_four.png">
+        <div class="main-rowa">
+          <div class="rowa-text">
+            <h6>Branding</h6>
+          </div>
+          <div class="rowa-icon">
+            <i class='bx bx-heart'></i>
+          </div>
+        </div>
+        <button class="myButtonSolution">View more >></button>
+      </div>
+
+      <div class="rowa">
+        <img src="multimedia/images/port_five.png">
+        <div class="main-rowa">
+          <div class="rowa-text">
+            <h6>3D design</h6>
+          </div>
+          <div class="rowa-icon">
+            <i class='bx bx-heart'></i>
+          </div>
+        </div>
+        <h3>Mobile app landing design & Services</h3><br>
+        <button class="myButtonSolution">View more >></button>
+      </div>
+
+      <div class="rowa">
+        <img src="multimedia/images/port_six.png">
+        <div class="main-rowa">
+          <div class="rowa-text">
+            <h6>VFX</h6> 
+          </div>
+          <div class="rowa-icon">
+            <i class='bx bx-heart'></i>
+          </div>
+        </div>
+        <h3>Mobile app landing design & Services</h3>
+      </div>
+
+    </div>
+  </section>
+
+
   <section class="d-none d-md-block container text-light mt-5" style="min-height: 910px;">
     <h2 class="container h1 pb-3 titulo">Soluciones creativas</h2>
     <div class="container panels text-light text-center">
@@ -734,18 +830,24 @@
     </div>
   </footer>
 
+
+  <a href="#" class="to-top" onclick="myFunctionScrollVideo()">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
   <!-- scripts -->
   <!-- scripts bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
     
-    <script src="js/progressbar.js"></script>
     <script src="js/solutions.js"></script>
     <script src="js/jquery.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/progressbar.js"></script>
   <!-- Termina script -->
+  
 </body>
 
 </html>
