@@ -7,6 +7,10 @@
   top: 0;
   bottom: 0;
 }
+.myCardMain{
+  background-color:#04080e;
+  border-radius: 20px 20px;
+}
 
 .botonVideo {
   border: transparent;
