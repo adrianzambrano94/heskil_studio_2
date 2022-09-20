@@ -11,3 +11,17 @@ textarea {
   border: solid 2px black;
   color: white;
 }
+
+/* Input field */
+input[type=submit] {
+  background-color: transparent;
+  color: #9BF3D0;
+  border: transparent;
+  margin: -0.25em -1em;
+  padding: 0.25em 1em;
+}
+input[type=submit]:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: transparent;
+}

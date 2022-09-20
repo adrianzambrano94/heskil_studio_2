@@ -1,8 +1,4 @@
-.myCardMain{
-  background-color:#070d18;
-  border-radius: 20px 20px;
-}
-
+/* Nota 01: Configuración de la forma de visualización del vídeo */
 #myVideo {
   height: 100vh;
   width: 100vw;
@@ -12,7 +8,9 @@
   top: 0;
   bottom: 0;
 }
+/* Termina Nota 01 */
 
+/* Nota 02: Efecto del botón sobre el vídeo para desplazar hacia abajo. */
 .botonVideo {
   border: transparent;
   background-color: transparent;
@@ -28,19 +26,17 @@
   transform: translate(0, -50%);
   animation: blinker 1.5s linear infinite;
 }
-
 @keyframes blinker {
   50% {
     opacity: 0;
   }
 }
-
 .botonVideo:hover {
   border: transparent;
   background-color: transparent;
   color: #9BF3D0;
 }
-
+/* Termina Nota 02 */
 
 /* Prueba del nuevo carrucel */
 .link2 {
