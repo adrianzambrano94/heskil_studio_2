@@ -1,6 +1,6 @@
 // Este archivo crea los efectos de reproducción para los vídeos
 
-const clip = document.querySelectorAll('.clip');
+// const clip = document.querySelectorAll('.clip');
 const grid = new Muuri('.grid', { layout: { rounding: false } });
 
 window.addEventListener('load', () => {
@@ -21,11 +21,11 @@ window.addEventListener('load', () => {
 });
 
 
-for (let i = 0; i < clip.length; i++) {
-    clip[i].addEventListener("mouseover", function (e) {
-        clip[i].play();
-    });
-    clip[i].addEventListener("mouseout", function (e) {
-        clip[i].pause();
-    });
-};
+// for (let i = 0; i < clip.length; i++) {
+//     clip[i].addEventListener("mouseover", function (e) {
+//         clip[i].play();
+//     });
+//     clip[i].addEventListener("mouseout", function (e) {
+//         clip[i].pause();
+//     });
+// };
