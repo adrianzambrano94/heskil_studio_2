@@ -80,7 +80,7 @@ a.active {
     position: relative;
 }
 
-.grid .item .item-content video {
+.grid .item .item-content video, .grid .item .item-content img {
     width: 100%;
     cursor: pointer;
 }
