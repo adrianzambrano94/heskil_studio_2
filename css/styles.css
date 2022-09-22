@@ -1,5 +1,8 @@
 /* -----------------AQUI COMIENZA EL NUEVO CODIGO------------------------ */
 
+video {
+    background-color: gray;
+}
 .port-content {
     width: 100vw;
     max-width: 1800px;
