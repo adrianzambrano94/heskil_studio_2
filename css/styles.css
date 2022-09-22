@@ -98,3 +98,12 @@ a.active {
 }
 
 /* ---------------- HOVER DE VIDEO EN GRID ------------------ */
+
+.static {
+    position:absolute;
+    /* background: white; */
+  }
+  
+  .static:hover {
+    opacity:0;
+  }
